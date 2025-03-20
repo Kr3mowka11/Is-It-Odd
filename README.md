@@ -4,18 +4,18 @@
 
 ## 🌟 URL
 ```
-https://kr3mowka11.github.io/is-it-odd/
+https://kr3mowka11.github.io/Is-It-Odd/
 ```
 ## 🚀 Usage
 
 ### API Endpoint
 Make a GET request to:
 ```
-https://is-it-odd.onrender.com/api/{your number}
+https://is-it-odd-api.onrender.com/api/{your number}
 ```
 Example:
 ```
-https://is-it-odd.onrender.com/api/7
+https://is-it-odd-api.onrender.com/api/7
 ```
 Response:
 ```json
