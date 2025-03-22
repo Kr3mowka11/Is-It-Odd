@@ -3,10 +3,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Meta Tags -->
     <title>Kr3mowka | Is It Odd?</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="description" content="A quick way to check if a number is odd, or not.">
+    <meta name="keywords" content="odd, even, is it odd, is it even, Kr3mowka, number, even number, odd number">
+    <meta name="author" content="Kr3mowka">
+    <link rel="canonical" href="https://kr3mowka11.github.io/Is-It-Odd">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kr3mowka | Is It Odd?">
+    <meta property="og:description" content="A quick way to check if a number is odd, or not.">
+    <meta property="og:url" content="https://kr3mowka11.github.io/Is-It-Odd">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/me_circle.png" type="image/x-icon">
-    <style>input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{display: none;margin: 0;}input[type="number"]{-moz-appearance: textfield;appearance: none;}</style>
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="css/tailwind.css">
+
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            display: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+            appearance: none;
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
 </head>
 <body class="overflow-y-hidden">
     <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-red-900 via-red-800 to-red-900 p-4">
