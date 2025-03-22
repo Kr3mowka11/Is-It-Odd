@@ -343,41 +343,26 @@
   .clear-start {
     clear: inline-start;
   }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      display: none;
+      margin: 0;
   }
-  .container\! {
-    width: 100% !important;
-    @media (width >= 40rem) {
-      max-width: 40rem !important;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem !important;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem !important;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem !important;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem !important;
-    }
+  input[type="number"] {
+      -moz-appearance: textfield;
+      appearance: none;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  .container {
+      transform: scale(1);
+      transition: transform 0.3s ease;
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) - 3rem);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -2463,4 +2448,22 @@
 @property --tw-duration {
   syntax: "*";
   inherits: false;
+}
+@media (max-height: 600px) {
+    .container {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 450px) {
+    .overflow-y-hidden {
+        overflow-y: auto;
+    }
+    .mt-3 {
+        margin-top: -90px;
+    }
+}
+@media (min-width: 2560px) {
+    .container {
+        transform: scale(2);
+    }
 }
